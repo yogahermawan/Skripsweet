@@ -1,0 +1,226 @@
+{
+	"id": "89cea40f-1fea-40c4-8bc1-91df889dfde9",
+	"name": "API-AWS",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"1dc2cdb5-8e11-49b1-a141-23a54c2af64e",
+		"eae77f4a-de55-49ef-9fb7-46cb332c4f77",
+		"5f36bd3f-9129-4777-8ed8-6ce2f38e485c",
+		"2553650e-cc8c-4b98-82e6-388ab2b6f7fe",
+		"0bd42cc7-2073-4817-8125-1bf3acb831d7",
+		"f73ff5c6-1060-4b49-8599-076a173e481b"
+	],
+	"folders_order": [],
+	"protocolProfileBehavior": {},
+	"folders": [],
+	"requests": [
+		{
+			"id": "0bd42cc7-2073-4817-8125-1bf3acb831d7",
+			"name": "detailMapel",
+			"url": "http://ec2-34-203-236-133.compute-1.amazonaws.com/mapel/detailmapel",
+			"description": "",
+			"data": [
+				{
+					"key": "idMapel",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataOptions": null,
+			"dataMode": "params",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "1dc2cdb5-8e11-49b1-a141-23a54c2af64e",
+			"name": "DownloadFile",
+			"url": "http://ec2-34-203-236-133.compute-1.amazonaws.com/mapel/download",
+			"description": "",
+			"data": [
+				{
+					"key": "namaFile",
+					"value": "/C:/Users/Gilang/Pictures/U-1577546171.pdf",
+					"description": "",
+					"type": "file",
+					"enabled": false
+				},
+				{
+					"key": "idFile",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "idMateri",
+					"value": "6",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "namaFile",
+					"value": "U-1577681405.jpeg",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataOptions": null,
+			"dataMode": "params",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "2553650e-cc8c-4b98-82e6-388ab2b6f7fe",
+			"name": "getMapel",
+			"url": "http://ec2-34-203-236-133.compute-1.amazonaws.com/mapel/getMapel",
+			"description": "",
+			"data": [
+				{
+					"key": "idKelas",
+					"value": "2",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataOptions": null,
+			"dataMode": "params",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "5f36bd3f-9129-4777-8ed8-6ce2f38e485c",
+			"name": "getMateri",
+			"url": "http://ec2-34-203-236-133.compute-1.amazonaws.com/mapel/getmateri",
+			"description": "",
+			"data": [
+				{
+					"key": "idMapel",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "idKelas",
+					"value": "2",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataOptions": null,
+			"dataMode": "params",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "eae77f4a-de55-49ef-9fb7-46cb332c4f77",
+			"name": "Login",
+			"url": "http://ec2-34-203-236-133.compute-1.amazonaws.com/login",
+			"description": "",
+			"data": [
+				{
+					"key": "username",
+					"value": "admin",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "admin",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataOptions": null,
+			"dataMode": "params",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "username",
+					"value": "roota",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "password",
+					"value": "rooting",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "f73ff5c6-1060-4b49-8599-076a173e481b",
+			"name": "Upload FIle",
+			"url": "http://ec2-34-203-236-133.compute-1.amazonaws.com/mapel/upload",
+			"description": "",
+			"data": [
+				{
+					"key": "namaFile",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "idMateri",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataOptions": null,
+			"dataMode": "params",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		}
+	]
+}
